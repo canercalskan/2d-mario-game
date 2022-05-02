@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Mario</title>
+</head>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        height: 100vh;
+        background-color: #124552;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    }
+    canvas {
+        background-color: #124552
+    }
+
+    
+    .scoreboard {
+        border-radius: 5px;
+       z-index: 1;
+       background-color: white;
+       opacity: 0.5;
+       height: 75px;
+       width: 400px;
+       position: absolute;
+       top: 0;
+       left:40%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       transition: 1.2s all;
+
+    }
+
+</style>
+
+<body>
+    <div class="scoreboard" id="scoreboard">
+        <h1><p id="lives" style="display: inline;"></p></h1>
+    </div>
+    <canvas>
+        
+    </canvas>
+   
+    <script src="scripts.js" type="module"></script>
+</body>
+</html>
